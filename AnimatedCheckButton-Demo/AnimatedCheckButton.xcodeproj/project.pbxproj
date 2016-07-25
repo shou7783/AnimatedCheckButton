@@ -12,27 +12,8 @@
 		C0A315EE1D41C66F00C1F2A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A315EC1D41C66F00C1F2A2 /* Main.storyboard */; };
 		C0A315F01D41C66F00C1F2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A315EF1D41C66F00C1F2A2 /* Assets.xcassets */; };
 		C0A315F31D41C66F00C1F2A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A315F11D41C66F00C1F2A2 /* LaunchScreen.storyboard */; };
-		C0A315FE1D41C66F00C1F2A2 /* AnimatedCheckButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A315FD1D41C66F00C1F2A2 /* AnimatedCheckButtonTests.swift */; };
-		C0A316091D41C67000C1F2A2 /* AnimatedCheckButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A316081D41C66F00C1F2A2 /* AnimatedCheckButtonUITests.swift */; };
 		C0A316171D41C69200C1F2A2 /* AnimatedCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A316161D41C69200C1F2A2 /* AnimatedCheckButton.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C0A315FA1D41C66F00C1F2A2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0A315DD1D41C66F00C1F2A2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0A315E41D41C66F00C1F2A2;
-			remoteInfo = AnimatedCheckButton;
-		};
-		C0A316051D41C66F00C1F2A2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0A315DD1D41C66F00C1F2A2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0A315E41D41C66F00C1F2A2;
-			remoteInfo = AnimatedCheckButton;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C0A315E51D41C66F00C1F2A2 /* AnimatedCheckButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedCheckButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,13 +23,7 @@
 		C0A315EF1D41C66F00C1F2A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0A315F21D41C66F00C1F2A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0A315F41D41C66F00C1F2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0A315F91D41C66F00C1F2A2 /* AnimatedCheckButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedCheckButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A315FD1D41C66F00C1F2A2 /* AnimatedCheckButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCheckButtonTests.swift; sourceTree = "<group>"; };
-		C0A315FF1D41C66F00C1F2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0A316041D41C66F00C1F2A2 /* AnimatedCheckButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedCheckButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A316081D41C66F00C1F2A2 /* AnimatedCheckButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCheckButtonUITests.swift; sourceTree = "<group>"; };
-		C0A3160A1D41C67000C1F2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0A316161D41C69200C1F2A2 /* AnimatedCheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedCheckButton.swift; sourceTree = "<group>"; };
+		C0A316161D41C69200C1F2A2 /* AnimatedCheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedCheckButton.swift; path = ../AnimatedCheckButton/AnimatedCheckButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,29 +34,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0A315F61D41C66F00C1F2A2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0A316011D41C66F00C1F2A2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C04057B01D45D1B700ACDA9B /* AnimatedCheckButton */ = {
+			isa = PBXGroup;
+			children = (
+				C0A316161D41C69200C1F2A2 /* AnimatedCheckButton.swift */,
+			);
+			name = AnimatedCheckButton;
+			sourceTree = "<group>";
+		};
 		C0A315DC1D41C66F00C1F2A2 = {
 			isa = PBXGroup;
 			children = (
-				C0A315E71D41C66F00C1F2A2 /* AnimatedCheckButton */,
-				C0A315FC1D41C66F00C1F2A2 /* AnimatedCheckButtonTests */,
-				C0A316071D41C66F00C1F2A2 /* AnimatedCheckButtonUITests */,
+				C0A315E71D41C66F00C1F2A2 /* AnimatedCheckButton-Demo */,
+				C04057B01D45D1B700ACDA9B /* AnimatedCheckButton */,
 				C0A315E61D41C66F00C1F2A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,13 +58,11 @@
 			isa = PBXGroup;
 			children = (
 				C0A315E51D41C66F00C1F2A2 /* AnimatedCheckButton.app */,
-				C0A315F91D41C66F00C1F2A2 /* AnimatedCheckButtonTests.xctest */,
-				C0A316041D41C66F00C1F2A2 /* AnimatedCheckButtonUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C0A315E71D41C66F00C1F2A2 /* AnimatedCheckButton */ = {
+		C0A315E71D41C66F00C1F2A2 /* AnimatedCheckButton-Demo */ = {
 			isa = PBXGroup;
 			children = (
 				C0A315E81D41C66F00C1F2A2 /* AppDelegate.swift */,
@@ -105,27 +71,9 @@
 				C0A315EF1D41C66F00C1F2A2 /* Assets.xcassets */,
 				C0A315F11D41C66F00C1F2A2 /* LaunchScreen.storyboard */,
 				C0A315F41D41C66F00C1F2A2 /* Info.plist */,
-				C0A316161D41C69200C1F2A2 /* AnimatedCheckButton.swift */,
 			);
+			name = "AnimatedCheckButton-Demo";
 			path = AnimatedCheckButton;
-			sourceTree = "<group>";
-		};
-		C0A315FC1D41C66F00C1F2A2 /* AnimatedCheckButtonTests */ = {
-			isa = PBXGroup;
-			children = (
-				C0A315FD1D41C66F00C1F2A2 /* AnimatedCheckButtonTests.swift */,
-				C0A315FF1D41C66F00C1F2A2 /* Info.plist */,
-			);
-			path = AnimatedCheckButtonTests;
-			sourceTree = "<group>";
-		};
-		C0A316071D41C66F00C1F2A2 /* AnimatedCheckButtonUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C0A316081D41C66F00C1F2A2 /* AnimatedCheckButtonUITests.swift */,
-				C0A3160A1D41C67000C1F2A2 /* Info.plist */,
-			);
-			path = AnimatedCheckButtonUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,42 +96,6 @@
 			productReference = C0A315E51D41C66F00C1F2A2 /* AnimatedCheckButton.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C0A315F81D41C66F00C1F2A2 /* AnimatedCheckButtonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0A316101D41C67000C1F2A2 /* Build configuration list for PBXNativeTarget "AnimatedCheckButtonTests" */;
-			buildPhases = (
-				C0A315F51D41C66F00C1F2A2 /* Sources */,
-				C0A315F61D41C66F00C1F2A2 /* Frameworks */,
-				C0A315F71D41C66F00C1F2A2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C0A315FB1D41C66F00C1F2A2 /* PBXTargetDependency */,
-			);
-			name = AnimatedCheckButtonTests;
-			productName = AnimatedCheckButtonTests;
-			productReference = C0A315F91D41C66F00C1F2A2 /* AnimatedCheckButtonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C0A316031D41C66F00C1F2A2 /* AnimatedCheckButtonUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0A316131D41C67000C1F2A2 /* Build configuration list for PBXNativeTarget "AnimatedCheckButtonUITests" */;
-			buildPhases = (
-				C0A316001D41C66F00C1F2A2 /* Sources */,
-				C0A316011D41C66F00C1F2A2 /* Frameworks */,
-				C0A316021D41C66F00C1F2A2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C0A316061D41C66F00C1F2A2 /* PBXTargetDependency */,
-			);
-			name = AnimatedCheckButtonUITests;
-			productName = AnimatedCheckButtonUITests;
-			productReference = C0A316041D41C66F00C1F2A2 /* AnimatedCheckButtonUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,14 +108,6 @@
 				TargetAttributes = {
 					C0A315E41D41C66F00C1F2A2 = {
 						CreatedOnToolsVersion = 7.3;
-					};
-					C0A315F81D41C66F00C1F2A2 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = C0A315E41D41C66F00C1F2A2;
-					};
-					C0A316031D41C66F00C1F2A2 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = C0A315E41D41C66F00C1F2A2;
 					};
 				};
 			};
@@ -221,8 +125,6 @@
 			projectRoot = "";
 			targets = (
 				C0A315E41D41C66F00C1F2A2 /* AnimatedCheckButton */,
-				C0A315F81D41C66F00C1F2A2 /* AnimatedCheckButtonTests */,
-				C0A316031D41C66F00C1F2A2 /* AnimatedCheckButtonUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,20 +137,6 @@
 				C0A315F31D41C66F00C1F2A2 /* LaunchScreen.storyboard in Resources */,
 				C0A315F01D41C66F00C1F2A2 /* Assets.xcassets in Resources */,
 				C0A315EE1D41C66F00C1F2A2 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0A315F71D41C66F00C1F2A2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0A316021D41C66F00C1F2A2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,36 +153,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0A315F51D41C66F00C1F2A2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0A315FE1D41C66F00C1F2A2 /* AnimatedCheckButtonTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0A316001D41C66F00C1F2A2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0A316091D41C67000C1F2A2 /* AnimatedCheckButtonUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C0A315FB1D41C66F00C1F2A2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C0A315E41D41C66F00C1F2A2 /* AnimatedCheckButton */;
-			targetProxy = C0A315FA1D41C66F00C1F2A2 /* PBXContainerItemProxy */;
-		};
-		C0A316061D41C66F00C1F2A2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C0A315E41D41C66F00C1F2A2 /* AnimatedCheckButton */;
-			targetProxy = C0A316051D41C66F00C1F2A2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0A315EC1D41C66F00C1F2A2 /* Main.storyboard */ = {
@@ -423,52 +282,6 @@
 			};
 			name = Release;
 		};
-		C0A316111D41C67000C1F2A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = AnimatedCheckButtonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shou.com.AnimatedCheckButtonTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimatedCheckButton.app/AnimatedCheckButton";
-			};
-			name = Debug;
-		};
-		C0A316121D41C67000C1F2A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = AnimatedCheckButtonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shou.com.AnimatedCheckButtonTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimatedCheckButton.app/AnimatedCheckButton";
-			};
-			name = Release;
-		};
-		C0A316141D41C67000C1F2A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = AnimatedCheckButtonUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shou.com.AnimatedCheckButtonUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AnimatedCheckButton;
-			};
-			name = Debug;
-		};
-		C0A316151D41C67000C1F2A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = AnimatedCheckButtonUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shou.com.AnimatedCheckButtonUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AnimatedCheckButton;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -488,22 +301,7 @@
 				C0A3160F1D41C67000C1F2A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		C0A316101D41C67000C1F2A2 /* Build configuration list for PBXNativeTarget "AnimatedCheckButtonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0A316111D41C67000C1F2A2 /* Debug */,
-				C0A316121D41C67000C1F2A2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C0A316131D41C67000C1F2A2 /* Build configuration list for PBXNativeTarget "AnimatedCheckButtonUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0A316141D41C67000C1F2A2 /* Debug */,
-				C0A316151D41C67000C1F2A2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
