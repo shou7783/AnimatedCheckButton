@@ -27,7 +27,41 @@
 
 import UIKit
 
-class AnimatedCheckButton: UIButton {
+public class AnimatedCheckButton: UIButton {
+    
+    // Public Property
+    public var duration: Double = 0.5
+    public var circleAlpha: CGFloat = 0.2 {
+        didSet {
+            circleLayer.strokeColor = self.color.colorWithAlphaComponent(circleAlpha).CGColor
+        }
+    }
+    
+    public var color: UIColor = UIColor.blueColor() {
+        didSet {
+            circleLayer.strokeColor = color.colorWithAlphaComponent(self.circleAlpha).CGColor
+            animatedLayer.strokeColor = color.CGColor
+        }
+    }
+    
+    public var lineWidth: CGFloat = 8 {
+        didSet {
+            circleLayer.lineWidth = lineWidth
+            animatedLayer.lineWidth = lineWidth
+        }
+    }
+    
+    override public var selected: Bool {
+        didSet {
+            if selected {
+                self.selectAnimation()
+            } else {
+                self.deselectAnimation()
+            }
+        }
+    }
+    
+    
     
     var animatedLayer: CAShapeLayer = CAShapeLayer()
     var circleLayer: CAShapeLayer = CAShapeLayer()
@@ -37,28 +71,6 @@ class AnimatedCheckButton: UIButton {
     private let strokeEnd_initValue: CGFloat = 0.735
     private let strokeEnd_completionValue  : CGFloat = 0.98
     private let animationOffset: CGFloat = 0.02
-    
-    
-    var duration: Double = 0.5
-    var circleAlpha: CGFloat = 0.2 {
-        didSet {
-            circleLayer.strokeColor = self.color.colorWithAlphaComponent(circleAlpha).CGColor
-        }
-    }
-    
-    var color: UIColor = UIColor.blueColor() {
-        didSet {
-            circleLayer.strokeColor = color.colorWithAlphaComponent(self.circleAlpha).CGColor
-            animatedLayer.strokeColor = color.CGColor
-        }
-    }
-    
-    var lineWidth: CGFloat = 8 {
-        didSet {
-            circleLayer.lineWidth = lineWidth
-            animatedLayer.lineWidth = lineWidth
-        }
-    }
     
     private var circleSize: CGSize {
         get {
@@ -72,22 +84,12 @@ class AnimatedCheckButton: UIButton {
         }
     }
     
-    override var selected: Bool {
-        didSet {
-            if selected {
-                self.selectAnimation()
-            } else {
-                self.deselectAnimation()
-            }
-        }
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setupView()
     }
@@ -151,13 +153,13 @@ class AnimatedCheckButton: UIButton {
         return bPath
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         circleLayer.path = UIBezierPath(ovalInRect: CGRect(origin: CGPointZero, size: self.circleSize)).CGPath
         animatedLayer.path = self.getAnimatedPath().CGPath
     }
     
-    override func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
+    override public func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
         let size = self.circleSize
         if (point.x < size.width && point.y < size.height) {
             return true;
@@ -251,11 +253,11 @@ class AnimatedCheckButton: UIButton {
         animatedLayer.addAnimation(animationGroup, forKey: "ff")
     }
     
-    override func animationDidStart(anim: CAAnimation) {
+    override public func animationDidStart(anim: CAAnimation) {
         self.userInteractionEnabled = false
     }
     
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+    override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         self.userInteractionEnabled = true
     }
     
